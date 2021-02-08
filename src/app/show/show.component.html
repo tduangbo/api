@@ -1,0 +1,14 @@
+<p>show works!</p>
+<h3> Get configuration from JSON file </h3>
+
+<div>
+    <button (click) ="clear(); getCardAPI()" > get Card API </button>
+    <span *ngIf ="config">
+    <p>Card Name: </p>
+    <p>Heroes API URL is "{{config.heroesUrl}}"</p>
+    <p>Textfile URL is "{{config.textfile}}"</p>
+    <p>Textfile URL is "{{config.cards[0].name}}"</p>
+    <img src="{{ config.cards[0].imageUrl}}" alt="mmm">
+
+    </span>
+</div>
